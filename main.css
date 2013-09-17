@@ -31,15 +31,13 @@ p, ul{
 
 .header img {
   margin: 0 20px 10px 0;
-  -webkit-animation-duration: 0.7s;
-  -webkit-animation-delay: 0.4s;
-  -webkit-animation-name: rotate;
-  -moz-animation-duration: 0.7s;
-  -moz-animation-delay: 0.4s;
-  -moz-animation-name: rotate;
-  animation-duration: 0.7s;
-  animation-delay: 0.4s;
-  animation-name: rotate;
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+  -webkit-animation: rotate 1s 1; /* Safari 4+ */
+  -moz-animation:    rotate 1s 1; /* Fx 5+ */
+  -o-animation:      rotate 1s 1; /* Opera 12+ */
+  animation:         rotate 1s 1; /* IE 10+ */
   display: block;
   float: left;
 }
