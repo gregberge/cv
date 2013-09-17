@@ -1,0 +1,258 @@
+body {
+  font-family: 'Gudea', sans-serif;
+  background: #E7EBF5;
+}
+
+p, ul{
+  font-size: 16px;
+}
+
+.container {
+  margin: 20px auto;
+  padding: 0;
+  border: 1px solid #9a9ab3;
+  background: #fff;
+}
+
+@-webkit-keyframes rotate {
+  0%   { -webkit-transform: rotate(0); }
+  100% { -webkit-transform: rotate(-10deg); }
+}
+
+@-moz-keyframes rotate {
+  0%   { -moz-transform: rotate(0); }
+  100% { -moz-transform: rotate(-10deg); }
+}
+
+@keyframes rotate {
+  0%   { transform: rotate(0); }
+  100% { transform: rotate(-10deg); }
+}
+
+.header img {
+  margin: 0 20px 10px 0;
+  -webkit-animation-duration: 0.7s;
+  -webkit-animation-delay: 0.4s;
+  -webkit-animation-name: rotate;
+  -moz-animation-duration: 0.7s;
+  -moz-animation-delay: 0.4s;
+  -moz-animation-name: rotate;
+  animation-duration: 0.7s;
+  animation-delay: 0.4s;
+  animation-name: rotate;
+  display: block;
+  float: left;
+}
+
+.header .infos {
+  padding: 15px 30px 0 0;
+  text-align: right;
+}
+
+.header .infos > div {
+  padding: 2px 0;
+}
+
+h1 {
+  font-size: 30px;
+  padding-top: 10px;
+  color: #1747b3;
+}
+
+h1 small {
+  display: block;
+  font-size: 18px;
+  line-height: 30px;
+  color: #7092de;
+  font-weight: bold;
+}
+
+h2 {
+  color: #fff;
+  font-size: 24px;
+  line-height: 30px;
+  background: #f2f4f9;
+}
+
+h2 > span {
+  background: #4e73c6;
+  display: inline-block;
+  padding: 0 20px 0 10px;
+}
+
+.entry > div:first-child {
+  padding: 5px 30px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.entry > div:first-child .last {
+  font-size: 18px;
+}
+
+.entry > div:last-child {
+  margin: 0;
+  border-left: 1px solid #ccc;
+}
+
+.entry > div:last-child > h3 {
+  margin: 10px 0 8px;
+  font-size: 20px;
+}
+
+.entry > div:last-child > p {
+  font-size: 18px;
+}
+
+.skills {
+  padding: 0 10px;
+}
+
+
+
+/*.cv{
+  margin: 0 100px;
+  width: 800px;
+  border: 1px solid #9a9ab3;
+  background-color: #fff;
+  color: #2B2B2C;
+}
+
+.cv .header{
+  height: 155px;
+}
+
+.cv .header .principal{
+  background-image: url(images/cv_photo.jpg);
+  background-repeat: no-repeat;
+  height: 130px;
+  padding: 25px 0 0 185px;
+  float: left;
+}
+
+.cv .header .principal h2{
+  color: #1747b3;
+  font-size: 30px;
+}
+
+.cv .header .principal p{
+  color: #7092de;
+  font-size: 18px;
+}
+
+.cv .header .infos{
+  float: right;
+  margin: 5px;
+  width: 210px;
+  height: 120px;
+  background-color: #f7f8f9;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border: 1px solid #e5e5e5;
+  font-size: 13px;
+}
+
+.cv .header .infos li{
+  margin: 3px 0 5px 8px;
+}
+
+.cv .header .infos .address{
+  margin-bottom: 15px;
+}
+
+.cv .section h3{
+  background-color: #f2f4f9;
+  height: 32px;
+  font-size: 22px;
+  color: #fff;
+  width: 100%;
+  line-height: 32px;
+}
+
+.cv .section h3 span{
+  display: inline;
+  background-color: #4e73c6;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.cv .section .entry{
+  margin: 12px 0 0 0;
+}
+
+.cv .section{
+  margin: 20px 0 0 0;
+}
+
+.cv .section .time{
+  float: left;
+  width: 150px;
+  color: #1747B3;
+  margin: 0 0 0 5px;
+}
+
+.cv .section .time *{
+  display: block;
+  width: 150px;
+}
+
+.cv .section .time .date{
+  font-size: 25px;
+}
+
+.cv .section .time .last{
+  font-size: 11px;
+}
+
+.cv .section .description{
+  float: left;
+}
+
+.cv .section .description h4{
+  font-size: 16px;
+}
+
+.cv .section .description h4 .info{
+  color: #777777;
+}
+
+.cv .section .description p{
+  font-size: 14px;
+  width: 600px;
+}
+
+.cv .section table{
+  width: 780px;
+  margin: 15px 10px 0 10px;
+  font-size: 12px;
+}
+
+.cv .section table th{
+  color: #1747B3;
+  font-size: 18px;
+}
+
+.cv .section table .star-empty{
+  float: right;
+  margin: 4px 20px 0 0;
+  height: 10px;
+  width: 65px;
+  background-image: url(images/cv_star_empty.png);
+}
+
+.cv .section table .star-full{
+  display: block;
+  height: 10px;
+  background-image: url(images/cv_star_full.png);
+}
+
+.cv ul.interest{
+  margin: 15px 0 30px 0;
+}
+
+.cv ul.interest li{
+  list-style-type: disc;
+  font-size: 13px;
+  margin: 0 0 0 40px;
+}*/
