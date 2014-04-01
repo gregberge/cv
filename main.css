@@ -88,6 +88,11 @@ h3 {
   border-bottom: 1px solid #eee;
 }
 
+h4 {
+  font-weight: bold;
+  margin: 25px 0 5px 0;
+}
+
 .entry > div:first-child {
   padding: 5px 30px;
   font-size: 25px;
@@ -107,7 +112,7 @@ h3 {
   font-size: 18px;
 }
 
-.entry > div:last-child > h4 {
+.personal-projects h4 {
   margin-top: 0;
 }
 

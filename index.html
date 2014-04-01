@@ -5,36 +5,39 @@
   <title>Greg Bergé, JavaScript expert</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="http://fonts.googleapis.com/css?family=Gudea:400,700,400italic" rel="stylesheet">
-  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
-  <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
   <link href="main.css" rel="stylesheet">
 </head>
 <body>
 <div class="container">
   <div class="row header">
-    <div class="col-md-8 col-xs-6">
+    <div class="col-md-9 col-sm-8 col-xs-6">
       <img src="http://www.gravatar.com/avatar/a8dfa4f756587e681da288381397928d.png?size=250" width="125" height="125"  alt="Photo of Greg Bergé" class="img-thumbnail animated">
       <h1>Greg Bergé <small>Freelance JavaScript developer</small></h1>
     </div>
-    <div class="infos col-md-4 col-xs-6">
+    <div class="infos col-md-3 col-sm-4 col-xs-6">
       <div class="address">
-        <i class="icon-home"></i> 27 rue Jeanne d'Arc<br>
+        <i class="fa fa-home"></i> 27 rue Jeanne d'Arc<br>
         94160 Saint-Mandé
         France
       </div>
       <div class="phone">
-        <a href="tel:+33620106950"><i class="icon-phone"></i> +33 6 20 10 69 50</a>
+        <a href="tel:+33620106950"><i class="fa fa-phone"></i> +33 6 20 10 69 50</a>
       </div>
       <div class="email">
-        <a href="mailto:berge.greg@gmail.com"><i class="icon-envelope"></i> berge.greg@gmail.com</a>
+        <a href="mailto:berge.greg@gmail.com"><i class="fa fa-envelope"></i> berge.greg@gmail.com</a>
+      </div>
+      <div class="website">
+        <a href="http://www.therightcode.net/"><i class="fa fa-globe"></i> therightcode.net</a>
       </div>
       <div class="twitter">
-        <a href="https://twitter.com/neoziro"><i class="icon-twitter"></i> @neoziro</a>
+        <a href="https://twitter.com/neoziro"><i class="fa fa-twitter"></i> @neoziro</a>
       </div>
     </div>
   </div>
 
-  <h2><span><i class="icon-briefcase"></i> Professional experiences</span></h2>
+  <h2><span><i class="fa fa-briefcase"></i> Professional experiences</span></h2>
 
   <h3>Software architect, R&D engineer</h3>
 
@@ -44,12 +47,16 @@
       <div class="last">~ now</div>
     </div>
     <div class="col-md-10 col-xs-8">
-      <p>Currently freelance, I have the role of software architect in the company "Le Monde". I implement solutions to handle with a huge traffic website, here some of projects that I conducted :</p>
-      <ul>
-        <li>Performance optimization of the website.</li>
-        <li>Push-notifications stack, send several millions of notifications per minute.</li>
-        <li>A new CMS, fully JavaScript, collaborative. I made several angular modules (<a href="https://github.com/neoziro/angular-draganddrop">angular-dragandrop</a>, <a href="https://github.com/neoziro/angular-notification">angular-notification</a>, <a href="https://github.com/neoziro/angular-primus">angular-primus</a>) and put in place a scalable real-time stack (<a href="https://github.com/neoziro/primus-cluster">primus-cluster</a>).</li>
-      </ul>
+      <p>Currently freelance, I have the role of software architect in the company "Le Monde". I have the role of leader and I implement solutions to handle with a huge traffic website. Since 2011, I have worked on multiple projects:</p>
+
+      <h4>Build a CMS for journalists</h4>
+      <p>The goal was to made a collaborative web CMS using node.js and AngularJS. I was the software architect on the project and I influence the choice of node.js. I built all the stack and even a deployment tool to fit needs of projet: <a href="https://github.com/neoziro/grunt-shipit">shipit</a>. I made several Angular modules like <a href="https://github.com/neoziro/angular-draganddrop">angular-dragandrop</a> or <a href="https://github.com/neoziro/angular-notification">angular-notification</a> and put in place a scalable real-time using <a href="https://github.com/einaros/ws">websockets</a>, <a href="https://github.com/primus/primus">primus</a> and <a href="https://github.com/neoziro/primus-cluster">primus-cluster</a>.</p>
+
+      <h4>Push-notifications stack</h4>
+      <p>Le Monde has several millions of users on iOS and Android. The challenge was to send all notifications as quickly as possible. I built a platform and several modules like <a href="https://github.com/neoziro/push-notify">push-notify</a> using <a href="http://nodejs.org/">node.js</a> and <a href="http://redis.io/">redis</a> to make this possible.</p>
+
+      <h4>Front-side performance improvement</h4>
+      <p>I put asynchrone loading with <a href="http://requirejs.org/">RequireJS</a>, minifying assets and lazyload images and iframe. The result was a huge improvement of the loading time.</p>
     </div>
   </div>
 
@@ -97,7 +104,7 @@
     </div>
   </div>
 
-  <h2><span><i class="icon-certificate"></i> Graduates</span></h2>
+  <h2><span><i class="fa fa-certificate"></i> Graduates</span></h2>
 
   <h3>International Master of Science</h3>
 
@@ -108,16 +115,75 @@
     </div>
   </div>
 
-  <h2><span><i class="icon-star"></i> Personal projects</span></h2>
+  <h2><span><i class="fa fa-github"></i> Open source projects</span></h2>
 
   <div class="projects">
+
+    <p>I maintain several open source projects :</p>
+
+    <h4><a href="https://github.com/neoziro/grunt-shipit">Shipit</a></h4>
+    <p>JavaScript deployment tool using Grunt.</p>
+
+    <h4><a href="https://github.com/neoziro/angular-notification">Angular notification</a></h4>
+    <p>Notification service for Angular using HTML5.</p>
+
+    <h4><a href="https://github.com/neoziro/angular-notification">Angular drag&drop</a></h4>
+    <p>Drag and drop directives for Angular using native HTML5 API.</p>
+
+    <h4><a href="https://github.com/neoziro/primus-cluster">Primus Cluster</a></h4>
+    <p>Scale Primus across multiple servers.</p>
+
+    <h4><a href="https://github.com/neoziro/bobun">Locky</a></h4>
+    <p>Resource locking system using redis.</p>
+
+    <h4><a href="https://github.com/neoziro/circular-progress">Circular Progress</a></h4>
+    <p>A JavaScript circular progress widget, dependency-free and configurable.</p>
+
+    <h4><a href="https://github.com/neoziro/push-notify">Push Notify</a></h4>
+    <p>A library to send notifications over multiple protocols (apn [Apple], gcm [Google], mpns [Windows Phone]) using a same interface.</p>
+
+    <h4><a href="https://github.com/neoziro/bower-registry">Bower registry</a></h4>
+    <p>Simple bower registry using node and redis.</p>
+
+    <hr>
+
+    <p>My other projects can be found on my <a href="https://github.com/neoziro"><i class="fa fa-github"></i> GitHub</a>.</p>
+  </div>
+
+  <h2><span><i class="fa fa-code"></i> Skills</span></h2>
+
+  <div class="skills">
+
+    <p>I am an expert in these domains :</p>
+
+    <ul>
+      <li>Test Driven Development (mocha, Karma)</li>
+      <li>Frontend development (Angular.js, Backbone.js, jQuery)</li>
+      <li>Backend development (node.js, PHP)</li>
+      <li>Continuous Integration (Travis, Jenkins)</li>
+      <li>Web Performance (Require.JS, Lazyload, WebPageTest)</li>
+    </ul>
+
+    <p>And I am confortable with:</p>
+
+    <ul>
+      <li>Operation tools (Unix, Capistrano, Shipit)</li>
+      <li>SQL Languages (Oracle, MySQL, Postgres)</li>
+      <li>CSS ecosystem (Less, Sass, Bootstrap)</li>
+    </ul>
+
+  </div>
+
+  <h2><span><i class="fa fa-star"></i> Personal projects</span></h2>
+
+  <div class="personal-projects">
 
     <div class="row entry">
       <div class="col-md-2 col-xs-4">
         2013 <small>feb</small>
       </div>
       <div class="col-md-10 col-xs-8">
-        <h4><a href="http://on-mange-quoi.co">On mange quoi ?</a></h4>
+        <h4>On mange quoi ?</h4>
         <p>Original website to help people to find an eating place.</p>
       </div>
     </div>
@@ -138,7 +204,7 @@
       </div>
       <div class="col-md-10 col-xs-8">
         <h4>Mystigame</h4>
-        <p>Gaming website, people could play 10 different games and win prizes.</p>
+        <p>Second gaming website, people could play 10 different games and win prizes.</p>
       </div>
     </div>
 
@@ -148,55 +214,12 @@
       </div>
       <div class="col-md-10 col-xs-8">
         <h4>Kadoparty</h4>
-        <p>Gaming website, people could play 10 different games and win prizes.</p>
+        <p>First gaming website, people could play 10 different games and win prizes.</p>
       </div>
     </div>
   </div>
 
-  <h2><span><i class="icon-github"></i> Open source projects</span></h2>
-
-  <div class="projects">
-
-    <p>I maintain several open source projects :</p>
-
-    <h4><a href="https://github.com/neoziro/bobun">Bobun</a></h4>
-    <p>Bobun is a very small (1.1K) UI oriented Backbone library.</p>
-
-    <h4><a href="https://github.com/neoziro/circular-progress">Circular Progress</a></h4>
-    <p>A JavaScript circular progress widget, dependency-free and configurable.</p>
-
-    <h4><a href="https://github.com/neoziro/push-notify">Push Notify</a></h4>
-    <p>A library to send notifications over multiple protocols (apn [Apple], gcm [Google], mpns [Windows Phone]) using a same interface.</p>
-
-    <h4><a href="https://github.com/neoziro/bower-registry">Bower registry</a></h4>
-    <p>Simple bower registry using node and redis.</p>
-
-    <hr>
-
-    <p>My other projects can be found on my <a href="https://github.com/neoziro"><i class="icon-github"></i> GitHub</a>.</p>
-  </div>
-
-  <h2><span><i class="icon-code"></i> Skills</span></h2>
-
-  <div class="skills">
-
-    <p>I am an expert in these domains :</p>
-
-    <ul>
-      <li>DevOps (Unix, Capistrano, Chef)</li>
-      <li>Test Driven Development (mocha, Karma)</li>
-      <li>Continuous Integration (Travis, Jenkins)</li>
-      <li>Backend (node.js, PHP)</li>
-      <li>Frontend (Angular.js, Backbone.js, jQuery)</li>
-      <li>Node (express, websockets, primus)</li>
-      <li>Web Performance (Require.JS, Lazyload, WebPageTest)</li>
-      <li>CSS ecosystem (Less, Sass, Bootstrap)</li>
-      <li>SQL Languages (Oracle, MySQL, Postgres)</li>
-    </ul>
-
-  </div>
-
-  <h2><span><i class="icon-heart"></i> Hobbies</span></h2>
+  <h2><span><i class="fa fa-heart"></i> Hobbies</span></h2>
 
   <ul>
     <li>Travel</li>
